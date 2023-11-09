@@ -1,0 +1,416 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+p,
+form {
+  margin: 0;
+  padding: 0;
+}
+
+.login-form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.back-button {
+  border: none;
+  color: #285DD9;
+  background: none;
+  margin-left: 13px;
+}
+
+h1,
+h2,
+h4 {
+  font-size: 32px;
+  margin-bottom: 12.5px;
+  line-height: 41.6px;
+  color: #173884;
+  height: 42px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+.login-form p {
+  color: #7f9ee8;
+  font-size: 14px;
+  line-height: 21px;
+  width: 408.48px;
+  height: 42px;
+  top: 58px;
+  left: 1px;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+}
+
+.entry-item {
+  position: relative;
+}
+
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+
+
+input {
+  display: block;
+  width: 410px;
+  height: 44px;
+  padding: 10px, 14px, 10px, 14px;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 16px;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  text-rendering: auto;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  text-align: start;
+  outline: none;
+}
+
+
+
+ol,
+ul {
+  padding-left: 0rem;
+}
+
+
+#email,
+#password,
+#otpCode,
+#newPassword,
+#reenterPassword,
+#emailVerificationCode {
+  text-indent: 10px;
+  
+}
+
+#password {
+  margin-bottom: 80px;
+}
+
+
+.button {
+  margin-top: 10px;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+[type=submit]:not(:disabled),
+button:not(:disabled) {
+  cursor: pointer;
+}
+
+
+
+.right-image-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50vw;
+  height: 100vh;
+  overflow: hidden;
+  padding: 0 !important;
+}
+
+.right-image {
+  width: 80%;
+  height: 100%;
+  float: right;
+  object-position: right;
+}
+
+.logo-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  max-width: 200px;
+  max-height: 120px;
+}
+
+.links-container {
+  position: absolute;
+  bottom: 5%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 239px;
+  height: 18px;
+  z-index: 1;
+}
+
+.link {
+  color: #cddaf4;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.link:hover {
+  color: #e0e0e0;
+  text-decoration: underline;
+}
+
+
+.intro {
+  color: white;
+  font-size: 2rem;
+}
+
+.error {
+  position: relative;
+  width: 100%;
+  display: none;
+}
+
+.error p {
+  margin: 0px;
+  color: #D20502;
+  font-size: 14px;
+}
+
+#api .heading {
+  display: none !important;
+}
+
+#api .intro {
+  display: none !important;
+}
+
+.footer {
+  color: #7A8B99;
+  font-size: 14px;
+  position: fixed;
+  bottom: 45px;
+  left: auto;
+  padding-left: 20px;
+}
+
+
+@media only screen and (max-width: 1440px) {
+  .container {
+    width: 100%;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  button#next {
+    width: 100%;
+    font-size: 13px;
+  }
+
+  .buttons button {
+    width: 100%;
+  }
+
+  #forgotPassword {
+    left: 74% !important;
+  }
+
+  .logo {
+    width: 100%;
+  }
+
+  .logo-container {
+    left: 20%;
+  }
+
+  .links-container {
+    left: 75%;
+    bottom: 5%;
+
+  }
+
+  .footer {
+    color: #7A8B99;
+    font-size: 14px;
+    position: fixed;
+    bottom: 2%;
+    left: auto;
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    width: 100%;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  button#next {
+    width: 100%;
+    font-size: 13px;
+  }
+
+  .buttons button {
+    width: 100%;
+  }
+
+  #forgotPassword {
+    left: 68% !important;
+  }
+
+  .logo {
+    width: 100%;
+  }
+
+  .links-container {
+    left: 70%;
+
+
+  }
+
+  .forget-password-link {
+    font-size: 14px;
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+  input {
+    width: 100%;
+  }
+
+  button#next {
+    width: 100%;
+    font-size: 13px;
+  }
+
+  .buttons button {
+    width: 100%;
+  }
+
+  #forgotPassword {
+    left: 56% !important;
+  }
+
+  .logo {
+    width: 100%;
+  }
+
+  .logo-container {
+    left: 5%;
+  }
+
+  .links-container {
+    left: 65%;
+
+  }
+
+  .forget-password-link {
+    font-size: 10px;
+  }
+
+  .error p{
+    width: 100%;
+  }
+
+}
+
+@media only screen and (max-width: 767px) {
+  input {
+    width: 100%;
+  }
+
+  button#next {
+    width: 100%;
+    font-size: 13px;
+  }
+
+  .buttons button {
+    width: 100%;
+  }
+
+  #forgotPassword {
+    left: 64% !important;
+  }
+
+  .right-image-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  .right-image {
+    width: 100% !important;
+    object-fit: contain !important;
+  }
+
+
+}
+
+@media only screen and (max-width: 320px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  button#next {
+    width: 100%;
+    font-size: 13px;
+  }
+
+  .buttons button {
+    width: 100%;
+  }
+
+  .links-container {
+    left: 55%;
+  }
+
+  #forgotPassword {
+    left: 50% !important;
+  }
+
+  .forget-password-link {
+    font-size: 8px;
+  }
+}
+
+.required-asterisk{
+  color: #285DD9;
+}
+
+.helpLink {
+  display: none;
+}
